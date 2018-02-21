@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aditya.design_3.MainActivity">
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@android:color/white"
+        android:src="@mipmap/ic_search"
+        app:fabSize="normal"
+        android:scaleType="center"
+        app:layout_anchor="@+id/bottomSheet"
+        app:layout_anchorGravity="top|end"
+        app:useCompatPadding="true"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/accent"
+        android:src="@mipmap/ic_location_on"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="normal"
+        android:scaleType="center"
+        android:layout_gravity="top|end"
+        app:layout_anchor="@+id/fabSearch"
+        app:layout_anchorGravity="top|end"
+        android:layout_margin="12dp"/>
+
+</RelativeLayout>
